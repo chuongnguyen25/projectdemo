@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chương Mùi</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+    <link type="text/css" rel="stylesheet" href="css/all.css" />
+    <link type="text/css" rel="stylesheet" href="sao.css" />
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+</head>
+<body>
+<header>
+    <img name="banner" style="width: 1200px; height: 350px; border: 2px solid rgb(0, 195, 255); border-radius: 20px;">
+    <center><label id="caption" style="color: rgb(255, 255, 255); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-shadow: 6px 6px 0px rgba(0,0,0,0.2); font-size: 40px; width: 1200px; height: 80px;"></label></center>
+</header>
+<nav>
+    <ul>
+        <li><a href="Trangchu.html"><i class="fa fa-home fa-lg"></i> TRANG CHỦ</a>
+        </li>
+        <li><a href="Trangchu.html"><i class="fa fa-globe-asia fa-spin fa-lg"></i>  GAME ONLINE</a>
+            <ul>
+                <li><a href="lmht.html">League of Legends</a></li>
+                <li><a href="dotkich.html">Đột Kích</a></li>
+                <li><a href="fifa.html">FiFa Online 4</a></li>
+            </ul>
+        </li>
+        <li><a href="Trangchu.html"><i class="fa fa-mobile-alt fa-lg"></i> GAME MOBILE</a>
+            <ul>
+                <li><a href="lq.html">Liên Quân Mobile</a></li>
+                <li><a href="pubg.html">PUBG Mobile</a></li>
+                <li><a href="omg.html">Zing Speed</a></li>
+            </ul>
+        </li>
+        <li><a href="Trangchu.html"><i class="fa fa-gift fa-lg"></i> THÀNH VIÊN</a>
+            <ul>
+                <li><a href="dangnhap.html">Đăng nhập</a></li>
+                <li><a href="#">Đăng Ký</a></li>
+                <li><a href="#">Sự Kiện</a></li>
+            </ul>
+        </li>
+        <li><a href="Trangchu.html"><i class="fab fa-facebook fa-lg"></i> Chương - Mùi</a>
+            <ul>
+                <li><a href="https://www.facebook.com/loalilom">Chương Nguyễn</a></li>
+                <li><a href="https://www.facebook.com/mui.duong.589">Mùi Dương</a></li>
+                <li><a href="#">Quà tặng</a></li>
+            </ul>
+        </li>
+        <form action="Trangchu.html">
+            <input type="search" placeholder="Tìm kiếm...">
+        </form>
+    </ul>
+</nav>
+<aside>
+    <ul>
+    <h2 style="width:250px"><i class="fa fa-gamepad fa-lg"></i> Danh sách Game</h2>
+        <li><a href="lmht.html">1. Liên Minh Huyền Thoại</a></li>
+        <li><a href="lq.html">2. Liên Quân mobile</a></li>
+        <li><a href="fifa.html">3. FiFa Online 4</a></li>
+        <li><a href="pubg.html">4. PUBG Mobile</a></li>
+        <li><a href="dotkich.html">5. Đột Kích</a></li>
+        <li><a href="zing.html">6. Zing Speed</a></li>
+        <li><a href="dota.html">7. DOTA 2</a></li>
+    </ul>
+    <ul style="height: 300px;"><h2><i class="fa fa-video fa-lg"></i> Video game</h2>
+        <video src="video/videolq.mp4"  width="300" height="169" poster="IMG/nenvideo.jpg" controls auto muted></video>
+        <button onclick="playPause()" style="width: 120px; height: 35px; margin-left: 25px; margin-top: 10px; border-radius: 20px;"><i class="fa fa-play"></i> Chạy</button>
+        <button onclick="playPause()" style="width: 120px; height: 35px; margin-left: 10px; margin-top: 10px; border-radius: 20px;"><i class="fa fa-pause"></i> Tạm Dừng</button>
+    </ul>
+    <ul>
+        <h2 style="width:250px"><i class="fa fa-user fa-lg"></i> Đăng kí tài khoản</h2>
+    <table style="width: 300px; border-radius: 10px;">
+        <form action="index2.html">
+        <tr>
+            <td>Tên đăng nhập:</td>
+            <td><input type="text" name="Name" placeholder="Tài khoản" size="15" required/></td>
+        </tr>
+        <tr>
+            <td>Mật khẩu:</td>
+            <td><input type="password" name="Password" placeholder="Mật khẩu" size="15" required/></td>
+        </tr>
+        <tr>
+            <td>Nhập lại MK:</td>
+            <td><input type="password" name="Password" placeholder="Nhập lại mật khẩu" size="15" required/></td>
+        </tr>
+        <tr>
+            <td>Số điện thoại:</td>
+            <td><input type="tel" name="tel" placeholder="+84xxxxxxxxx" size="15" required/></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" placeholder="@example.com" size="15" required/></td>
+            </tr>
+        <td>Giới tính:</td>
+            <td><input type="radio" name="Sex" value="Nam" style=" width: 15px;height: 15px;" required/>Nam &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="Sex" value="Nữ" style=" width: 15px;height: 15px; margin-left: 0px;" required/>Nữ</td>
+        </tr>
+        <tr>
+            <td>Ngày sinh:</td>
+            <td><input type="date" name="Birthday" required/></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Đồng ý" style="border-radius: 20px; width:100px; height:30px; margin-left: 80px;padding-left: 10px;" required/></td>
+        </tr>
+        </form>
+    </table>
+    </ul>
+    <ul><h2><i class="fa fa-music fa-lg"></i> Nghe nhạc</h2>
+        <p style="font-family: cursive; text-align: center;margin-top: -30px;">Sai lầm của anh - Đình Dũng</p>
+        <audio src="music/Sai lầm của anh.mp3" controls loop>
+        </audio>
+    </ul>
+    <ul style="width: 300px; height: 335px;">
+        <img src="IMG/nenvideo.jpg" style="margin-top: 40px; border-radius: 10px;">
+    </ul>
+</aside>
+<section>
+    <h2 style="font-size: 40px; margin-bottom: -5px;">GAME ONLINE - GAME MOBILE<br>Số 1 Việt Nam</h2>
+    <div class="stars" style="margin-left: 300px;">
+        <form action="">
+          <input class="star star-5" id="star-5" type="radio" name="star"/>
+          <label class="star star-5" for="star-5"></label>
+          <input class="star star-4" id="star-4" type="radio" name="star"/>
+          <label class="star star-4" for="star-4"></label>
+          <input class="star star-3" id="star-3" type="radio" name="star"/>
+          <label class="star star-3" for="star-3"></label>
+          <input class="star star-2" id="star-2" type="radio" name="star"/>
+          <label class="star star-2" for="star-2"></label>
+          <input class="star star-1" id="star-1" type="radio" name="star"/>
+          <label class="star star-1" for="star-1"></label>
+        </form>
+    </div>
+    <ul>
+        <li>
+        <a href="lmht.html"><img src="image/lmht.jpg">
+        <h2>Liên Minh Huyền Thoại</h2>
+        <p>Có rất nhiều điều để tạo nên một trận đấu thành công trên Chiến Trường Công Lý.<br>
+            Trong mục hướng dẫn người chơi mới, bạn sẽ được học cách điều khiển các vị tướng của mình, 
+            những kiến trúc bạn sẽ gặp trên chiến trường và chơi qua quá trình Hướng dẫn.<br>
+            Một khi đã sẵn sàng, bạn sẽ tham gia vào trận chiến đầu tiên trong 
+            Liên Minh Huyền Thoại đầy tính cạnh tranh.</p></a>
+            <a href="lmht.html"><button><i class="fa fa-search"></i> Chi tiết...</button></a>
+            <a href="https://lienminh.garena.vn/"><button style="margin-left: 20px;"><i class="fa fa-gamepad"></i> Chơi game</button></a>
+        </li>
+        <li>
+        <a href="lq.html"><img src="image/lq.jpg">
+        <h2>Liên Quân Mobile</h2>
+        <p>Liên Quân Mobile là game MOBA di động được xây dựng dựa trên Liên Minh Huyền Thoại 
+                do Garena phát hành tại Việt Nam<br>
+                Trò chơi này vốn có tên gốc là Vương Giả Vinh Diệu - một sản phẩm
+                cực kỳ nổi tiếng tại thị trường Trung Quốc của "ông lớn" Tencent.<br>
+                Vẫn là phong cách MOBA LMHT quen thuộc cùng với các tính năng, 
+                trang bị/vật phẩm được "bê" sang phiên bản mobile.</p></a>
+            <a href="lq.html"><button><i class="fa fa-search"></i> Chi tiết...</button></a>
+            <a href="https://lienquan.garena.vn/"><button style="margin-left: 20px;"><i class="fa fa-gamepad"></i> Chơi game</button></a>
+            <a href="https://play.google.com/store/apps/details?id=com.garena.game.kgvn&referrer=af_tranid%3Dy2c6AlOam_hBXyLK
+                     XSzt0Q%26pid%3DOrganicA%26c%3Dobt_lp_and%26af_web_id%3Db053bb94-3181-40b7-bd49-737e972ed015">
+            <button style="margin-left: 20px;"><i class="fa fa-download"></i> Tải game</button></a>
+        </li>
+        <li>
+        <a href="pubg.html"><img src="image/pubg.jpg">
+        <h2>PUBG Mobile</h2>
+        <p>PUBG Mobile - game di động đang 'gây sốt' toàn thế giới <br>
+            Trò chơi sinh tồn này đứng đầu bảng xếp hạng game Android và iOS ở nhiều quốc gia, 
+            với hàng chục triệu lượt tải chỉ sau hai tuần ra mắt.
+            Là sản phẩm của hãng Tencent (Trung Quốc), công ty game có doanh thu lớn nhất thế giới, 
+            trò chơi có nội dung dựa trên game sinh tồn nổi tiếng trên máy tính có tên PlayerUnknown's 
+            Battlegrounds (PUBG), do một công ty Hàn Quốc phát triển.</p></a>
+            <a href="pubg.html"><button><i class="fa fa-search"></i> Chi tiết...</button></a>
+            <a href="https://pubgm.zing.vn/event/halloweeks2019/index.html?"><button style="margin-left: 20px;"><i class="fa fa-gamepad"></i> Chơi game</button></a>
+            <a href="https://play.google.com/store/apps/details?id=com.vng.pubgmobile"><button style="margin-left: 20px;"><i class="fa fa-download"></i> Tải game</button></a>
+        </li>
+        <li>
+        <a href="fifa.html"><img src="image/fifa.jpg">
+        <h2>FiFa Online 4</h2>
+        <p>FIFA Online 4 (hay thường được gọi là FO4) là tựa game đá bóng Online nối tiếp FIFA Online 3 do Nexon và EA Sports phát hành và
+             đã chính thức ra mắt lần đầu tiên vào ngày 17 tháng 5 năm 2018 ở Hàn Quốc trên hệ máy PC.
+              Phiên bản điện thoại (FIFA Online 4M) dự kiến sẽ được ra mắt vào tháng 7 năm 2018 tại Hàn Quốc.</p></a>
+            <a href="fifa.html"><button><i class="fa fa-search"></i> Chi tiết...</button></a>
+            <a href="https://fo4.garena.vn/"><button style="margin-left: 20px;"><i class="fa fa-gamepad"></i> Chơi game</button></a>
+        </li>
+        <li>
+        <a href="dotkich.html"><img src="image/dotkich.jpg">
+        <h2>Đột Kích - Cross Fire</h2>
+        <p>CrossFire hay Đột Kích là một trò chơi trực tuyến bắn súng góc nhìn thứ nhất (FPS)
+                được sản xuất và phát triển bởi Smilegate (Hàn Quốc).<br>Theo Business Insider, hiện CrossFire 
+                có lượng người chơi chạm mốc 50 triệu trên toàn thế giới.<br>Tháng 2 năm 2008, VTC chính thức đưa
+                Game Đột kích phiên bản việt hóa vào Việt Nam.</p></a>
+            <a href="dotkich.html"><button><i class="fa fa-search"></i> Chi tiết...</button></a>
+            <a href="https://play.google.com/store/apps/details?id=com.gs2.omg"><button style="margin-left: 20px;"><i class="fa fa-gamepad"></i> Chơi game</button></a>
+        </li>
+        <li>
+        <a href="zing.html"><img src="image/zing.jpg">
+        <h2>Zing Speed Mobile</h2>
+        <p>Trong thế giới mà tốc độ lên ngôi, kỹ năng trên đường đua của bạn sẽ tạo nên điều kỳ diệu!!! 
+                ZingSpeed Mobile – Dùng tốc độ khẳng định bản thân! Dùng kỹ năng để nâng tầm giá trị.<br>
+                Hãy đến với ZingSpeed Mobile – game đua xe online trên di động mới nhất tại Việt Nam! 
+                Thế giới đua xe thế hệ mới, sử dụng công nghệ tiên tiến mang đến những trải nghiệm chân thật nhất, 
+                đồ họa sắc nét cùng dàn âm thanh cực đỉnh!!!</p></a>
+            <a href="zing.html"><button><i class="fa fa-search"></i> Chi tiết...</button></a>
+            <a href="http://zingspeedm.vn/"><button style="margin-left: 20px;"><i class="fa fa-gamepad"></i> Chơi game</button></a>
+            <a href="https://play.google.com/store/apps/details?id=com.vng.speedvn"><button style="margin-left: 20px;"><i class="fa fa-download"></i> Tải game</button></a>
+        </li>
+    </ul>
+</section>
+<footer>
+    <ul>
+        <h1><i class="fa fa-gamepad fa-lg"></i> Game Online</h1>
+        <h2>
+        <i class="fas fa-ad fa-lg"></i> Design by<br>
+        <i class="fas fa-user-circle fa-lg"></i> Chương Nguyễn<br>
+        <i class="fas fa-user-circle fa-lg"></i> Mùi Dương</h2>
+    </ul>
+    <ul>
+        <h1><i class="fa fa-phone-square-alt fa-lg"></i> Liên hệ</h1>
+        <h2>
+        <i class="fa fa-map-marker-alt fa-lg"></i> 70 Nguyễn Huệ<br>
+        <i class="fa fa-mobile-alt fa-lg"></i> 1900100biết<br>
+        <i class="fa fa-envelope fa-lg"></i> ChuongMui@gmail.com<h2>
+    </ul>
+    <ul>
+        <h1><i class="fa fa-address-card fa-lg"></i> Mạng xã hội</h1>
+        <h2>
+        <i class="fab fa-facebook fa-lg"></i> Facebook.com/ChuongMui<br>
+        <i class="fab fa-youtube fa-lg"></i> Youtube.com/ChuongMui<br>
+        <i class="fab fa-instagram fa-lg"></i> Instagram/ChuongMui<h2>
+        </ul>
+    <ul>
+        <h1><i class="fa fa-map-marked-alt fa-lg"></i> Địa chỉ</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1913.1762035474146!2d107.5
+        87738!3d16.457684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2e605afab4951ad9!2zVHLGsOG7nW5nIE
+        NhbyDEkeG6s25nIEPDtG5nIG5naGnhu4dwIEh14bq_!5e0!3m2!1svi!2sus!4v1572518109300!5m2!1svi!2sus" width="250" height="120" style="margin-top: -20px;"></iframe>
+    </ul>
+</footer>
+    <script type="text/javascript" src="slide.js"></script>
+    <script type="text/javascript" src="banner.js"></script>
+</body>
+</html>
