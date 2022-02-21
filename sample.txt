@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-day la nhanh master
-=======
-Day la nhanh game 2
->>>>>>> game2
+day la nhanh moi
